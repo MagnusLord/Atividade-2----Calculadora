@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+// Aqui estamos definindo a versão do XML e o tipo do módulo como "JAVA_MODULE" 
+<module type="JAVA_MODULE" version="4"> 
+  // Aqui estamos definindo as configurações do gerenciador de raiz do novo módulo, herdando a saída do compilador 
+  <component name="NewModuleRootManager" inherit-compiler-output="true"> 
+    // Aqui estamos excluindo a saída do projeto 
+    <exclude-output /> 
+    // Aqui estamos definindo o conteúdo do projeto, que inclui uma pasta de origem e uma pasta de teste 
+    <content url="file://$MODULE_DIR$"> 
+      <sourceFolder url="file://$MODULE_DIR$/lib" isTestSource="false" /> 
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" /> 
+      // Aqui estamos excluindo algumas pastas do projeto, incluindo a pasta ".dart_tool", a pasta ".idea" e a pasta "build" 
+      <excludeFolder url="file://$MODULE_DIR$/.dart_tool" /> 
+      <excludeFolder url="file://$MODULE_DIR$/.idea" /> 
+      <excludeFolder url="file://$MODULE_DIR$/build" /> 
+    </content> 
+    // Aqui estamos definindo a ordem de entrada do tipo "sourceFolder" para testes falsos 
+    <orderEntry type="sourceFolder" forTests="false" /> 
+    // Aqui estamos definindo a ordem de entrada do tipo "library" para o "Dart SDK" em nível de projeto 
+    <orderEntry type="library" name="Dart SDK" level="project" /> 
+    // Aqui estamos definindo a ordem de entrada do tipo "library" para os plugins do Flutter em nível de projeto 
+    <orderEntry type="library" name="Flutter Plugins" level="project" /> 
+    // Aqui estamos definindo a ordem de entrada do tipo "library" para os pacotes Dart em nível de projeto 
+    <orderEntry type="library" name="Dart Packages" level="project" /> 
+  </component> 
+</module>

@@ -1,0 +1,18 @@
+// Aqui estamos declarando a função principal do programa "Calculadora"
+void main() => runApp(MyApp());
+ // Aqui estamos criando uma classe chamada "MyApp" que herda de "StatelessWidget"
+class MyApp extends StatelessWidget {
+  // Aqui estamos sobrescrevendo o método "build" da classe "StatelessWidget"
+  @override
+  Widget build(BuildContext context) {
+    // Aqui estamos definindo a orientação do dispositivo como "portraitUp"
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
+     // Aqui estamos retornando um objeto "MaterialApp" com o parâmetro "debugShowCheckedModeBanner" definido como falso e a tela inicial definida como "Calculator()"
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Calculator(),
+    );
+  }
+}
